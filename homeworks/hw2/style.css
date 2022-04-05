@@ -1,3 +1,24 @@
-img{
+body {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+.comic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
     height: 700px;
+}
+
+.links {
+    padding: 20px;
+}
+
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine {
+    font-size: 20px;
+    padding: 10px;
+    color: aliceblue;
 }
