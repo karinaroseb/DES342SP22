@@ -41,7 +41,7 @@ header h1 {
 
 
 /* Nav styles */
-nav { background-color: rgb(227, 153, 184); }
+nav { background-color:rgb(200, 185, 233);; }
 nav ul { 
 	display: flex;
 	justify-content: flex-end;
@@ -79,9 +79,21 @@ aside {
 
 /* Footer styles */
 footer { 
-	background-color:rgb(227, 153, 184);
+	background-color:rgb(200, 185, 233);
 	color: white;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
  }
  footer p { padding: 20px; }
+ img{
+	 width: 100%;
+ }
+ .image-stack{
+	 float:right;
+	 width: 20%;
+	 margin-left: 140%;
+	 margin-top: -25%;
+	 padding-top: 0%;
+	 position: relative;
+	 z-index: 1;
+ }
