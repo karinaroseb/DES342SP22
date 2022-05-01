@@ -1,9 +1,13 @@
-*{box-sizing: border-box;}
-.body{
+* {
+  box-sizing: border-box;
+}
+
+.body {
   background-color: #ECE3D4;
   margin: 0%;
   display: flex;
 }
+
 .parallax {
   /* The image used */
   background-image: url("images/frame1.jpg");
@@ -18,10 +22,13 @@
   background-size: cover;
 }
 
+/* Main Page  */
 .head {
   background-color: #ECE3D4;
+  margin-top: -30px;
 }
-.head2{
+
+.head2 {
   display: none;
   background-color: #ECE3D4;
   height: 300px;
@@ -31,11 +38,19 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -30px;
   width: 60%;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3{
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9,
+.bgimg-10 {
   min-height: 800px;
   position: relative;
   opacity: 0.75;
@@ -44,6 +59,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bgimg-1 {
   background-image: url("images/frame1.jpg");
 }
@@ -145,14 +161,44 @@
   /* border: 1px solid rgb(32, 186, 14); */
   display: flex;
   width: 35%;
-   margin-left: 15%;
-   margin-top: 2%;
-   margin-bottom: 8%;
+  margin-left: 15%;
+  margin-top: 2%;
+  margin-bottom: 8%;
 }
 
 .smol {
   width: 30%;
 
+}
+
+.imglink {
+  width: 100%;
+}
+
+.smol.imglink {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.smol.imglink:hover {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.link {
+  display: flex;
+  padding: 0%;
+  margin: 0%;
+  width: 30%;
+  border: 1px solid rgb(32, 186, 14);
+}
+
+.headlink {
+  width: 100%;
 }
 
 .right p,
@@ -163,53 +209,132 @@
   align-self: center;
 }
 
-@media only screen and (max-width: 600px) {
-  .smol {
-    max-height: 100%;
-  }
-  .right p,
-  .left p {
-    font-size: 120%;
-    padding-left: 8%;
-    width: 100%;
-  }
+/* Movie Pages */
 
-  .right, .left {
-    margin-left: 5%;
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 0%;
-  }
-
-  .bg4 {
-    background-color: #ECE3D4;
-    background-image: none
-  }
-  .bgimg-1, .bgimg-2, .bgimg-3{
-    min-height: 300px;
-    background-size:auto;
-  }
-  .blirb {
-    padding: 50px 50px;
-  }
-  .head{
-    display: none;
-  }
-  .head2{
-    visibility: visible;
-    display:flex;
-    height: auto;
-  }
-  .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 60%;
-  }
-  .gif{
-    width: 30%;
-    margin-left: -200%;
-  }
+.althead {
+  height: 250px;
+  display: block;
 }
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top: 3%;
+}
+
+.large {
+  width: 10%;
+}
+
+/* Totoro Specific */
+.tothead {
+  background-color: #82C1ED;
+}
+
+.tot {
+  background-color: #82C1ED;
+}
+
+.bgimg-5 {
+  background-image: url("images/howls.jpg");
+}
+
+.bgimg-6 {
+  background-image: url("images/howls.jpg");
+}
+  /* Castle Specific */
+  .cashead {
+    background-color: #79A66D;
+  }
+
+  .cas {
+    background-color: #79A66D;
+  }
+
+  .bgimg-7 {
+    background-image: url("images/howls.jpg");
+  }
+
+  .bgimg-8 {
+    background-image: url("images/howls.jpg");
+  }
+    /* Howl's Specific */
+    .howhead {
+      background-color: #FFC3AB;
+    }
+
+    .how {
+      background-color: #FFC3AB;
+    }
+
+    .bgimg-9 {
+      background-image: url("images/howls.jpg");
+    }
+
+    .bgimg-10 {
+      background-image: url("images/howls.jpg");
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      .smol {
+        max-height: 100%;
+      }
+
+      .right p,
+      .left p {
+        font-size: 120%;
+        padding-left: 8%;
+        width: 100%;
+      }
+
+      .right,
+      .left {
+        margin-left: 5%;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+      }
+
+      .bg4 {
+        background-color: #ECE3D4;
+        background-image: none
+      }
+
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        min-height: 300px;
+        background-size: auto;
+      }
+
+      .blirb {
+        padding: 50px 50px;
+      }
+
+      .head {
+        display: none;
+      }
+
+      .head2 {
+        visibility: visible;
+        display: flex;
+        height: auto;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 60%;
+      }
+
+      .gif {
+        width: 30%;
+        margin-left: -200%;
+      }
+    }
