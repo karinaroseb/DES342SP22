@@ -235,7 +235,7 @@
   align-self: center;
   font-size: large;
 }
-/* .closeButton:before {
+.closeButton:before {
   width: 100px;
   height: 80px;
   content: "";
@@ -270,7 +270,7 @@
   left: 28px;
   display: block;
   transform: matrix(1, 0, 0, 1, 0, 0);
-} */
+}
 /* Totoro Specific */
 .tothead {
   background-color: #82C1ED;
@@ -292,7 +292,10 @@
   .cas {
     background-color: #79A66D;
   }
-
+  .casflex{
+    display: flex;
+    flex-direction: column;
+  }
     /* Howl's Specific */
     .howhead {
       background-color: #FFC3AB;
@@ -301,7 +304,10 @@
     .how {
       background-color: #FFC3AB;
     }
-
+    .howflex{
+      display: flex;
+      flex-direction: column;
+    }
 
     @media only screen and (max-width: 600px) {
       .smol {
