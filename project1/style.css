@@ -374,6 +374,7 @@
 
   .blirb {
     padding: 50px 50px;
+    font-size: 75%;
   }
 
   .head {
@@ -399,4 +400,40 @@
     width: 30%;
     margin-left: -200%;
   }
+  .link {
+    width: 45%;
+  }
+  .right p,
+.left p {
+  font-size: 95%;
+}
+/* Movie Pages */
+
+.althead {
+  height: 95px;
+}
+
+.center2 {
+  width: 70%;
+}
+
+.large {
+  height: 100vh;
+}
+
+.blirb2 {
+  padding: 50px 0px;
+  width: 86%;
+  font-size: small;
+}
+
+.closeButton:before {
+display: none;
+}
+
+.closeButton {
+  display: none;
+}
+
+
 }
