@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben&family=Noto+Serif+JP:wght@500&family=Oswald&display=swap');
 * {
   box-sizing: border-box;
   cursor: url("images/cursor.png") 25 55, auto;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .body {
@@ -85,6 +87,7 @@
   top: 50%;
   width: 100%;
   text-align: center;
+
 }
 
 .caption span.border {
@@ -104,6 +107,7 @@
   padding: 50px 100px;
   text-align: left;
   align-items: center;
+  font-size: 14px;
 }
 
 .para {
@@ -115,6 +119,7 @@
   color: #6D3A1D;
   text-align: center;
   font-size: 25px;
+  font-family: 'Corben', cursive;
 }
 
 .gif {
@@ -198,10 +203,12 @@
 
 .right p,
 .left p {
-  font-size: 150%;
+  font-size: 125%;
   padding-left: 8%;
   width: 40%;
   align-self: center;
+  color: #6D3A1D;
+  font-family: 'Corben', cursive;
 }
 
 /* Movie Pages */
@@ -232,9 +239,9 @@
   padding: 100px 0px;
   text-align: left;
   align-items: center;
-  width: 70%;
+  width: 64%;
   align-self: center;
-  font-size: large;
+  font-size: medium;
 }
 
 .closeButton:before {
