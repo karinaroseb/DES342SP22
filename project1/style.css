@@ -1,14 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Corben&family=Noto+Serif+JP:wght@500&family=Oswald&display=swap');
+
 * {
   box-sizing: border-box;
   cursor: url("images/cursor.png") 25 55, auto;
   font-family: 'Noto Serif JP', serif;
+  margin: 0%;
 }
-
 .body {
   background-color: #ECE3D4;
-  margin: 0%;
+  margin: 0;
   display: flex;
+}
+.player, .player2{
+ text-align: center;
+ margin-top: -5%;
+}
+.btn-default {
+  color: black;
+  /* background-color: #fff; */
+  border: 1.8px solid black;
+}
+.btn,.btn2{
+  max-width: 100px;
+  display: inline-block;
+  padding: 6px 2px;
+  margin-bottom: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.btn{
+    width: 10%;
+}
+.btn2{
+  width: 20%;  
+  font-family: 'Corben', cursive;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  
+}
+.btn img{
+  width: 120%;  
+}
+.audioDemo{
+  display: none;
 }
 
 .parallax {
@@ -213,11 +250,14 @@
 
 /* Movie Pages */
 
+
 .althead {
-  height: 250px;
+  height: 350px;
   display: block;
 }
-
+.player2{
+  margin: 0%;
+}
 .center2 {
   display: block;
   margin-left: auto;
@@ -386,6 +426,9 @@
     display: flex;
     height: auto;
   }
+  .audioDemo{
+    visibility: visible;
+  }
 
   .center {
     display: block;
@@ -400,40 +443,43 @@
     width: 30%;
     margin-left: -200%;
   }
+
   .link {
     width: 45%;
   }
+
   .right p,
-.left p {
-  font-size: 95%;
-}
-/* Movie Pages */
+  .left p {
+    font-size: 95%;
+  }
 
-.althead {
-  height: 95px;
-}
+  /* Movie Pages */
 
-.center2 {
-  width: 70%;
-}
+  .althead {
+    height: 95px;
+  }
 
-.large {
-  height: 100vh;
-}
+  .center2 {
+    width: 70%;
+  }
 
-.blirb2 {
-  padding: 50px 0px;
-  width: 86%;
-  font-size: small;
-}
+  .large {
+    height: 100vh;
+  }
 
-.closeButton:before {
-display: none;
-}
+  .blirb2 {
+    padding: 50px 0px;
+    width: 86%;
+    font-size: small;
+  }
 
-.closeButton {
-  display: none;
-}
+  .closeButton:before {
+    display: none;
+  }
+
+  .closeButton {
+    display: none;
+  }
 
 
 }

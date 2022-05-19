@@ -1,35 +1,31 @@
-$(".audioDemo").bind("load", function () {
-    $(".alert-success").html("Audio Loaded succesfully");
-});
+var audio;
+$(document).ready
+audio = $(".audioDemo");
+    addEventHandlers();
 
-//starts playing
-$(".audioDemo").trigger('play');
-//pause playing
-$(".audioDemo").trigger('pause');
-
-function stopAudio() {
-    //pause playing
-    $(".audioDemo").trigger('pause');
-    //set play time to 0
-    $(".audioDemo").prop("currentTime", 0);
+function addEventHandlers(){
+    $("a.load").click(loadAudio);
+    $("a.start").click(startAudio);
+    $("a.pause").click(pauseAudio);
+    $("a.stop").click(stopAudio);
 }
 
-function volumeUp() {
-    var volume = $(".audioDemo").prop("volume") + 0.2;
-    if (volume > 1) {
-        volume = 1;
-    }
-    $(".audioDemo").prop("volume", volume);
+function loadAudio(){
+    audio.bind("load",function(){
+        $(".alert-success").html("Audio Loaded succesfully");
+    });
+    audio.trigger('load');
 }
 
-function volumeDown() {
-    var volume = $(".audioDemo").prop("volume") - 0.2;
-    if (volume < 0) {
-        volume = 0;
-    }
-    $(".audioDemo").prop("volume", volume);
+function startAudio(){
+    audio.trigger('play');
 }
 
-function toggleMuteAudio() {
-    $(".audioDemo").prop("muted", !$(".audioDemo").prop("muted"));
+function pauseAudio(){
+    audio.trigger('pause');
+}
+
+function stopAudio(){
+    pauseAudio();
+    audio.prop("currentTime",0);
 }
