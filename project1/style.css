@@ -12,7 +12,15 @@
   margin: 0;
   display: flex;
 }
-
+#divRectangle {
+  position: absolute;
+  background-color: #ECE3D4;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
 .player,
 .player2 {
   text-align: center;
@@ -365,6 +373,7 @@
   display: block;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
+
 
 /* Totoro Specific */
 .tothead {
