@@ -421,6 +421,12 @@
   margin-left: 70%;
   margin-top: 9%;
 }
+.spritegif{
+  position: absolute;
+  margin-top: 5%;
+  width: 50%;
+  margin-left: 25%;
+}
 
 /* Castle Specific */
 .cashead {
