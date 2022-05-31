@@ -181,12 +181,16 @@
   max-width: 750px;
   align-self: center;
 }
+.para p{
+  margin-bottom: 3%
+}
 
 .blirbtitle {
   color: #6D3A1D;
   text-align: center;
   font-size: 25px;
   font-family: 'Corben', cursive;
+  margin-bottom: 1%;
 }
 
 .gif {
