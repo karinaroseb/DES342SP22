@@ -202,6 +202,11 @@
   position: relative;
   z-index: 1;
 }
+.biggif{
+  width: 74vw;
+  position: absolute;
+  margin-left: 25%;
+}
 
 .adjust {
   display: flex;
@@ -415,6 +420,12 @@
   position: absolute;
   margin-left: 70%;
   margin-top: 9%;
+}
+.spritegif{
+  position: absolute;
+  margin-top: 5%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 /* Castle Specific */
