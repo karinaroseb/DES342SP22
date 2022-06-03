@@ -389,6 +389,12 @@
   display: block;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
+.wave-top{
+  width: 99vw; 
+  fill:#ECE3D4;
+  position: absolute;
+ z-index: 1;
+}
 
 
 /* Totoro Specific */
