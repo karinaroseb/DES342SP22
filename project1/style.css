@@ -481,11 +481,16 @@
 .howhead {
   background-color: #FFC3AB;
 }
-
+.pangif{
+  position: absolute;
+  margin-top: 40vh;
+  width: 40%;
+  margin-left: 0%;
+}
 .howbgimg-1 .large {
   width: 75vw;
   height: auto;
-  padding-top: 25vh;
+  padding-top: 10vh;
 }
 
 .how {
